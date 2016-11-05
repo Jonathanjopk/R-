@@ -1,0 +1,804 @@
+warnings()
+Bessell_Gen=function(a,v,z,max,tolerance){#
+	sum1=0#
+	sum2=0#
+	for(m in 0:max){#
+		sum1=sum2#
+		sum2=sum1+(1/(gamma(m+a+1)*(factorial(m))^v)*(z/2)^(2*m+a)#
+		if((m>max)&(abs(sum1-sum2)<tolerance))#
+			break#
+	}#
+	return(sum2)#
+}
+Bessell_Gen=function(a,v,z,max,tolerance){#
+	sum1=0#
+	sum2=0#
+	for(m in 0:max){#
+		sum1=sum2#
+		sum2=sum1+(1/(gamma(m+a+1)*(factorial(m))^v)*(z/2)^(2*m+a)#
+		if((m>max)&(abs(sum1-sum2)<tolerance)){break}#
+	}#
+	return(sum2)#
+}
+Bessell_Gen=function(a,v,z,max,tolerance){#
+	sum1=0#
+	sum2=0#
+	for(m in 0:max){#
+		sum1=sum2#
+		sum2=sum1+(1/(gamma(m+a+1)*factorial(m))^v)*(z/2)^(2*m+a)#
+		if((m>max)&(abs(sum1-sum2)<tolerance)){break}#
+	}#
+	return(sum2)#
+}
+Bessell_Gen(5,1,10,1000,1e-5)
+mi=0#
+BesselI_Gen = function(a, v, z, max, tolerance){#
+for(m in 0:max){#
+kt=(1/(gamma(m+a+1)*(factorial(m))^v)*(z/2)^(2*m+a))#
+mi=mi+kt#
+if(kt<tolerance){break}#
+#
+}#
+return(mi)#
+}
+Bessell_Gen(5,1,10,1000,1e-5)
+warning()
+Bessell_Gen=function(a,v,z,max,tolerance){#
+	sum1=0#
+	sum2=0#
+	for(m in 0:max){#
+		sum1=sum2#
+		sum2=sum1+(1/(gamma(m+a+1)*factorial(m))^v)*(z/2)^(2*m+a)#
+		if((m>max)&(abs(sum1-sum2)<tolerance)){break}#
+	}#
+	return(sum2)#
+}
+Bessell_Gen(5,1,10,1000,1e-5)
+factorial(1000)
+factorial(500)
+factorial(20)
+factorial(50)
+exp(37591)
+exp(sum(log(1:50))
+)
+Bessell_Gen=function(a,v,z,max,tolerance){#
+	sum1=0#
+	sum2=0#
+	for(m in 0:max){#
+		sum1=sum2#
+		sum2=sum1+(1/(gamma(m+a+1)*exp(sum(log(1:m)))^v)*(z/2)^(2*m+a)#
+		if((m>max)&(abs(sum1-sum2)<tolerance)){break}#
+	}#
+	return(sum2)#
+}
+Bessell_Gen=function(a,v,z,max,tolerance){#
+	sum1=0#
+	sum2=0#
+	for(m in 0:max){#
+		sum1=sum2#
+		sum2=sum1+(1/(gamma(m+a+1)*(exp(sum(log(1:m))))^v)*(z/2)^(2*m+a)#
+		if((m>max)&(abs(sum1-sum2)<tolerance)){break}#
+	}#
+	return(sum2)#
+}
+Bessell_Gen=function(a,v,z,max,tolerance){#
+	sum1=0#
+	sum2=0#
+	for(m in 0:max){#
+		sum1=sum2#
+		sum2=sum1+(1/(gamma(m+a+1)*(exp(sum(log(1:m))))^v)*(z/2)^(2*m+a)#
+		if((m>max)|(abs(sum1-sum2)<tolerance)){break}#
+	}#
+	return(sum2)#
+}
+Bessell_Gen=function(a,v,z,max,tolerance){#
+	sum1=0#
+	sum2=0#
+	for(m in 0:max){#
+		sum1=sum2#
+		sum2=sum1+(1/(gamma(m+a+1)*factorial(m))^v)*(z/2)^(2*m+a)#
+		if((m>max)|(abs(sum1-sum2)<tolerance)){break}#
+	}#
+	return(sum2)#
+}
+Bessell_Gen(5,1,10,1000,1e-5)
+besselI(5,10)
+besselI(10,5)
+Bessell_Gen=function(a,v,z,max,tolerance){#
+	sigma1=0 #sigma m-1#
+	sigma2=0 #sigma m#
+	for(m in 0:max){#
+		sigma1=sigma2#
+		sigma2=sigma1+(1/(gamma(m+a+1)*factorial(m))^v)*(z/2)^(2*m+a)#
+		if((m>max)|(abs(sigma1-sigma2)<tolerance)){break} #The terminating condition#
+	}#
+	return(sigma2)#
+}
+Bessell_Gen(5,1,10,1000,1e-5)
+library(mvtnorm)
+install.packages("mvtnorm")
+library(mvtnorm)
+set.seed(121402)
+x.corr=matrix(c(1, mclvl[i], mclvl[i], 1), ncol=2)
+x=rmvnorm(n, mean=c(0, 0), sigma=x.corr)
+mclvl=c()
+x.corr=matrix(c(1, mclvl[i], mclvl[i], 1), ncol=2)
+x1=x[ , 1]
+mclvl=seq(0, 0.95, 0.05)
+x.corr=matrix(c(1, mclvl[i], mclvl[i], 1), ncol=2)
+n=1000
+b0=0.2; b1=0.5; b2=0.75
+ls()
+library(alabama)#
+f=function(x){sin(x[1]+x[2]+x[3])}#
+heq=function(x){-x[1]*x[2]^3+x[1]^2*x[3]^2-5}#
+hin=function(x){#
+    h=c()#
+    h[1]=x[1]-x[2]#
+    h[2]=x[2]-x[3]#
+    h#
+}#
+ans=constrOptim.nl(c(3,1,0),f, heq, hin)
+library(Rsolnp)
+upper=rep(5, 3) # three 5s#
+lower=rep(0, 3)#
+ans=solnp(c(3, 1, 0), f, eqfun=heq, ineqfun=hin, LB=lower, UB=upper, #
+ineqLB=c(0, 0), ineqUB=c(5,5))
+fr=function(x){100*(x[2]-x[1]^2)^2+(1-x[1])^2}#
+upper=c(.9,Inf) #the upper bound of X2 is infinite since the question dosen't define it.#
+hin=function(x){#
+	h=c()#
+	h[1]=x[2]-x[1]#
+	h#
+}#
+solnp(c(.1,2),fr,ineqfun=hin,UB=upper,ineqLB=.1,ineqUB=Inf)
+library(lpSolve)
+install.packages("lpSolve")
+library(lpSolve)
+simple.lp=lp(objective.in=c(5,8), const.mat=matrix(c(1,1,1,2),2),#
+const.rhs=c(2,3), const.dir=c(">=",">=")) #5,8 are the coefficients for X
+simple.lp
+simple1.lp=lp(objective.in=c(-5,-8), const.mat=matrix(c(1,1,1,2),2),#
+const.rhs=c(2,3), const.dir=c(">=",">="))
+simple1.lp
+simple1.lp=lp(objective.in=c(-5,-8), const.mat=matrix(c(1,1,1,2),2),#
+const.rhs=c(2,3), const.dir=c("<=","="))
+simple1.lp
+unres.lp=lp(objective.in=c(1,10,-10), const.mat=matrix(c(1,1,1,-1,-1,1),2),#
+const.rhs=c(2,3), const.dir=c(">=","<="))#
+unres.lp$solution
+install.packages(“MV A”)
+install.packages("MVA")
+install.packages("HSAUR2")#
+install.packages("fMultivar")
+library(fMultivar)#
+library(MVA)#
+data(USairpollution)#
+attach(USairpollution)
+dm=dist(scale(USairpollution[ , -1]))
+head(USairpollution)
+dev.new(width=15, height=5)#
+par(mfrow=c(1,3))#
+plot(cs <- hclust(dm, method= "single"))#
+plot(cc <- hclust(dm, method= "complete"))#
+plot(ca <- hclust(dm, method= "average"))
+dev.new(width=15, height=5)
+plot(cs <- hclust(dm, method= "single"))
+ls()
+cutree(cs, h=2)
+table(cutree(cs, h=2))
+usair_ck=kmeans(scale(USairpollution[,-1]),centers=3)
+usair_ck$cluster
+usair_ck=kmeans(scale(USairpollution[,-1]),centers=2)
+usair_ck$cluster
+k=6#
+WGSS=c()#
+for(i in 1:k){#
+    WGSS[i]=sum(kmeans(scale(USairpollution[,-1]),centers=i)$withinss)#
+}
+plot(1:k,WGSS,type="b")
+usair_ck=kmeans(scale(USairpollution[,-1]),centers=3)#
+usair_ck$cluster
+(1.035)^20
+(1.07^20)
+x=(1.035)^20
+y=(1.07^20)
+y/x
+setwd("/Users/jonathan/Dropbox/R 期末報告/")
+list.files
+list.files()
+library(readxl)
+data=read_excel("awesome2.xlsx",2)#
+attach(data)#
+head(data)#
+exchange=匯率#
+y=JP_NKY_FutureExpect#
+rdc.model=lm(y~0)#
+fwd.model=step(rdc.model,direction = "both",scope=(~(log(GDP)+exchange+失業率+消費者信心+利率+Unemploy_rise+CI_rise+interest_rise)^5))#
+rdc.model=lm(y~0)#
+fwd.model=step(rdc.model,direction = "both",scope=(~(log(GDP)+exchange+Unemploy_rise+CI_rise+interest_rise)^5))#
+summary(fwd.model)
+rise=as.data.frame(rise)#
+write.csv(rise,"rise.csv")#
+k=c()#
+for(j in 100:1800){#
+  Buy=(predict(fwd.model))>j#
+  Success=((Buy+rise)==2)  #
+  Fail=((Buy-rise)==1)#
+  if(sum(Buy,na.rm = T)>5){#
+  k[j]=sum(Success)/sum(Success+Fail)#
+  }#
+}#
+max(k,na.rm = T)#
+Buy=(predict(fwd.model))>which.max(k)
+Buy
+sum(Buy)
+head(data)
+reg=lm(y~log(GDP)+CPI_rise+interest_rise+CI_rise+Unemploy_rise+匯率)
+summary(reg)
+reg=lm(y~log(GDP)+CPI_rise+interest_rise+CI_rise+Unemploy_rise+匯率-1)
+summary(reg)
+reg=lm(y~log(GDP)+CPI_rise+interest_rise+CI_rise+Unemploy_rise+匯率)
+summary(reg)
+head(data)
+tail(data)
+log(1000000)
+y
+diff(GDP)
+head(GD{})
+head(GD{P)
+head(GDP)
+GDP
+diff(GDP)
+271245-267840
+271245.2-267840
+dif_gdp=diff(GDP)
+dif_gdp
+dif_gdp=c(3405.2,dif_gdp)
+dif_gdp
+reg=lm(y~dif_gdp+CPI_rise+interest_rise+CI_rise+Unemploy_rise+匯率)
+summary(reg)
+reg=lm(y~GDP+CPI_rise+interest_rise+CI_rise+Unemploy_rise+匯率)
+summary(reg)
+head(data)
+reg1=lm(y~GDP+物價指數+利率+消費者信心+失業率+匯率)
+summary(reg1)
+t=seq(1,128,1)
+t
+reg1=lm(y~GDP+物價指數+利率+消費者信心+失業率+匯率+t)
+summary(reg1)
+fwd.model=reg1
+k=c()#
+for(j in 100:1800){#
+  Buy=(predict(fwd.model))>j#
+  Success=((Buy+rise)==2)  #
+  Fail=((Buy-rise)==1)#
+  if(sum(Buy,na.rm = T)>10){#
+  k[j]=sum(Success)/sum(Success+Fail)#
+  }#
+}#
+max(k,na.rm = T)#
+Buy=(predict(fwd.model))>which.max(k)#
+#計算出首次數#
+times=sum(Buy,na.rm = T)
+summary(predict(fwd.model))
+k
+k=c()#
+for(j in 100:1800){#
+  Buy=(predict(fwd.model))>j#
+  Success=((Buy+rise)==2)  #
+  Fail=((Buy-rise)==1)#
+  if(sum(Buy,na.rm = T)>30){#
+  k[j]=sum(Success)/sum(Success+Fail)#
+  }#
+}#
+max(k,na.rm = T)#
+Buy=(predict(fwd.model))>which.max(k)#
+#計算出首次數#
+times=sum(Buy,na.rm = T)
+k
+968-506
+k=c()#
+for(j in 100:1800){#
+  Buy=(predict(fwd.model))>j#
+  Success=((Buy+rise)==2)  #
+  Fail=((Buy-rise)==1)#
+  if(sum(Buy,na.rm = T)>50){#
+  k[j]=sum(Success)/sum(Success+Fail)#
+  }#
+}#
+max(k,na.rm = T)#
+Buy=(predict(fwd.model))>which.max(k)#
+#計算出首次數#
+times=sum(Buy,na.rm = T)
+物價指數
+日經
+reg2=lm(y~GDP+物價指數+利率+消費者信心+失業率+匯率)
+summary(reg2)
+summary(reg1)
+-1.274e+02
+summary(reg1)[]
+hist(summary(reg1)$residuals)
+new.dev()
+dev.new()
+hist(summary(reg2)$residuals)
+reg2
+reg1
+reg3=lm(日經~GDP+物價指數+利率+消費者信心+失業率+匯率+t)
+summary(reg3)
+head(data)
+reg3=lm(JP_NKY_FutureExpect~GDP+物價指數+利率+消費者信心+失業率+匯率+t)
+summary(reg3)
+summary(reg1)
+y
+JP_NKY_FutureExpect
+nikkei=日經
+nikkei=nikkei[2:length(nikkei)]
+nikkei
+length(nikkei)
+nikkei=c(nikkei,17818.96)
+nikkei
+reg3=lm(nikkei~GDP+物價指數+利率+消費者信心+失業率+匯率+t)
+summary(reg3)
+dev.new()
+hist(summary(reg3)$residuals)
+hist(nikkei)
+plot(t,nikkei)
+plot(t,nikkei,type="l")
+dev.new()
+plot(t,summary(reg3)$residuals,type="l")
+nikkei
+nikkei_t.m1=nikkei[1:127]
+nikkei_t.m1=c(8016.67,nikkei_t.m1)
+reg3=lm(nikkei_t.m1+GDP+物價指數+利率+消費者信心+失業率+匯率+t)
+nikkei_t.m1
+reg3=lm(nikkei~nikkei_t.m1+GDP+物價指數+利率+消費者信心+失業率+匯率+t)
+summary(reg3)
+nikkei
+nikkei_t.m1
+read(data)
+日經
+reg.simple=lm(nikkei~nikkei_t.m1)
+acf(nikkei)
+summary(reg.simple)
+ar(nikkei)
+?ar
+hist(summary(reg3)$residuals)
+reg=lm(y~log(GDP)+CPI_rise+interest_rise+CI_rise+Unemploy_rise+匯率-1)
+ha=data.frame(nikkei,nikkei_t.m1,t)
+ha
+library(xlsx)
+write.xlsx(ha,"ha.xlsx")
+qqplot(summary(reg1)$residual)
+qqnorm(summary(reg1)$residual)
+reg3
+summary(reg3)
+summary(reg2)
+head(data)
+利率
+library(readxl)#
+attend=read_excel("Econ101.xls",1,skip=7,col_names=F)#
+names(attend)=c("number","dep","ID","name","1","2","3","4","5","6","7","8","9","10","11","12")#
+attend1=data.frame(attend[,5:16])#
+#
+#convert X to 0#
+for(i in 1:43){#
+	for(ii in 1:12){#
+		if(attend1[i,ii]=="X")#
+			attend1[i,ii]=0#
+	}#
+}#
+#
+#Count numbers of 0 in each student#
+zero=c()#
+for(i in 1:43){#
+	count=0#
+	for(ii in 1:12){#
+		if(attend1[i,ii]==0)#
+			count=count+1#
+	}#
+	zero[i]=count#
+}#
+names(zero)=attend[,4]#
+zero=as.data.frame(zero)#
+#
+#convert the scores#
+for(i in 1:43){#
+	for(ii in 1:12){#
+		if(attend1[i,ii]=="A"){#
+			attend1[i,ii]=1#
+			next}#
+		if(attend1[i,ii]=="B"){#
+			attend1[i,ii]=.8#
+			next}#
+		if(attend1[i,ii]=="C"){#
+			attend1[i,ii]=.6#
+			next}#
+		if(attend1[i,ii]=="D"){#
+			attend1[i,ii]=.4}#
+	}#
+}#
+attend1[]=lapply(attend1, as.numeric)#
+#
+#sort the scores#
+attend1=apply(attend1,1,sort,decreasing=F) # 1 means row, 2 means column#
+#eliminate 2 scores from the data and calculate the scores#
+attend1=attend1[3:12,]#
+average_attend=apply(attend1,2,sum)#
+names(average_attend)=attend[,4]#
+average_attend=as.data.frame(average_attend)#
+#Second#
+#load homework#
+hw=read_excel("Econ101.xls",2)#
+hw1=data.frame(hw[,4:14])#
+#
+#covert the scores#
+for(i in 1:43){#
+	for(ii in 1:11){#
+		if(hw1[i,ii]=="A+"){#
+			hw1[i,ii]=2.5#
+			next}#
+		if(hw1[i,ii]=="A"){#
+			hw1[i,ii]=2.3#
+			next}#
+		if(hw1[i,ii]=="A-"){#
+			hw1[i,ii]=2.1#
+			next}#
+		if(hw1[i,ii]=="B+"){#
+			hw1[i,ii]=1.9#
+			next}#
+		if(hw1[i,ii]=="B"){#
+			hw1[i,ii]=1.7#
+			next}#
+		if(hw1[i,ii]=="B-"){#
+			hw1[i,ii]=1.5#
+			next}#
+		if(hw1[i,ii]=="NA")#
+			hw1[i,ii]=0#
+	}#
+}#
+hw1[]=lapply(hw1, as.numeric) # Sosososososo important!!!!!!!!! Converting the string to numeric#
+#
+#sort the scores#
+hw1=apply(hw1,1,sort,decreasing=F) # 1 means row, 2 means column#
+#eliminate 2 scores from the data and calculate the scores#
+hw1=hw1[3:11,]#
+average_hw=apply(hw1,2,sum)#
+names(average_hw)=hw[,3]#
+average_hw=as.data.frame(average_hw)#
+#
+#Third#
+#load exams#
+exam=read_excel("Econ101.xls",3)#
+exam1=exam[,4:6]#
+#
+#calculate the scores#
+average_exam=exam1[,1]*.15+exam1[,2]*.15+exam1[,3]*.3#
+names(average_exam)=exam[,3]#
+average_exam=as.data.frame(average_exam)#
+#
+#Forth#
+#load tests#
+test=read_excel("Econ101.xls",4)#
+test1=test[,4:5]#
+#
+#sort the scores#
+test1=apply(test1,1,sort,decreasing=F) # 1 means row, 2 means column#
+#eliminate 1 scores from the data and calculate the scores#
+average_test=test1[2,]*.05#
+names(average_test)=test[,3]#
+average_test=as.data.frame(average_test)#
+#The final result#
+final=average_attend+average_hw+average_test+average_exam#
+combine=data.frame(average_attend,average_hw,average_test,average_exam,final)#
+names(combine)=c("attend","hw","test","exam","result")
+setwd("/Users/jonathan/NCCU/郭老師/經濟學TA/1042/")
+library(readxl)#
+attend=read_excel("Econ101.xls",1,skip=7,col_names=F)#
+names(attend)=c("number","dep","ID","name","1","2","3","4","5","6","7","8","9","10","11","12")#
+attend1=data.frame(attend[,5:16])#
+#
+#convert X to 0#
+for(i in 1:43){#
+	for(ii in 1:12){#
+		if(attend1[i,ii]=="X")#
+			attend1[i,ii]=0#
+	}#
+}#
+#
+#Count numbers of 0 in each student#
+zero=c()#
+for(i in 1:43){#
+	count=0#
+	for(ii in 1:12){#
+		if(attend1[i,ii]==0)#
+			count=count+1#
+	}#
+	zero[i]=count#
+}#
+names(zero)=attend[,4]#
+zero=as.data.frame(zero)#
+#
+#convert the scores#
+for(i in 1:43){#
+	for(ii in 1:12){#
+		if(attend1[i,ii]=="A"){#
+			attend1[i,ii]=1#
+			next}#
+		if(attend1[i,ii]=="B"){#
+			attend1[i,ii]=.8#
+			next}#
+		if(attend1[i,ii]=="C"){#
+			attend1[i,ii]=.6#
+			next}#
+		if(attend1[i,ii]=="D"){#
+			attend1[i,ii]=.4}#
+	}#
+}#
+attend1[]=lapply(attend1, as.numeric)#
+#
+#sort the scores#
+attend1=apply(attend1,1,sort,decreasing=F) # 1 means row, 2 means column#
+#eliminate 2 scores from the data and calculate the scores#
+attend1=attend1[3:12,]#
+average_attend=apply(attend1,2,sum)#
+names(average_attend)=attend[,4]#
+average_attend=as.data.frame(average_attend)#
+#Second#
+#load homework#
+hw=read_excel("Econ101.xls",2)#
+hw1=data.frame(hw[,4:14])#
+#
+#covert the scores#
+for(i in 1:43){#
+	for(ii in 1:11){#
+		if(hw1[i,ii]=="A+"){#
+			hw1[i,ii]=2.5#
+			next}#
+		if(hw1[i,ii]=="A"){#
+			hw1[i,ii]=2.3#
+			next}#
+		if(hw1[i,ii]=="A-"){#
+			hw1[i,ii]=2.1#
+			next}#
+		if(hw1[i,ii]=="B+"){#
+			hw1[i,ii]=1.9#
+			next}#
+		if(hw1[i,ii]=="B"){#
+			hw1[i,ii]=1.7#
+			next}#
+		if(hw1[i,ii]=="B-"){#
+			hw1[i,ii]=1.5#
+			next}#
+		if(hw1[i,ii]=="NA")#
+			hw1[i,ii]=0#
+	}#
+}#
+hw1[]=lapply(hw1, as.numeric) # Sosososososo important!!!!!!!!! Converting the string to numeric#
+#
+#sort the scores#
+hw1=apply(hw1,1,sort,decreasing=F) # 1 means row, 2 means column#
+#eliminate 2 scores from the data and calculate the scores#
+hw1=hw1[3:11,]#
+average_hw=apply(hw1,2,sum)#
+names(average_hw)=hw[,3]#
+average_hw=as.data.frame(average_hw)#
+#
+#Third#
+#load exams#
+exam=read_excel("Econ101.xls",3)#
+exam1=exam[,4:6]#
+#
+#calculate the scores#
+average_exam=exam1[,1]*.15+exam1[,2]*.15+exam1[,3]*.3#
+names(average_exam)=exam[,3]#
+average_exam=as.data.frame(average_exam)#
+#
+#Forth#
+#load tests#
+test=read_excel("Econ101.xls",4)#
+test1=test[,4:5]#
+#
+#sort the scores#
+test1=apply(test1,1,sort,decreasing=F) # 1 means row, 2 means column#
+#eliminate 1 scores from the data and calculate the scores#
+average_test=test1[2,]*.05#
+names(average_test)=test[,3]#
+average_test=as.data.frame(average_test)#
+#The final result#
+final=average_attend+average_hw+average_test+average_exam#
+combine=data.frame(average_attend,average_hw,average_test,average_exam,final)#
+names(combine)=c("attend","hw","test","exam","result")
+combine
+write.xlsx("combine","Final Scores.xlsx")
+69*.15+75*.15+46*.3
+combnie
+combine
+write.xlsx(combine,"Final Scores.xlsx")
+head(data)
+head(test)
+#First#
+#load attendance#
+library(readxl)#
+attend=read_excel("Econ101.xls",1,skip=7,col_names=F)#
+names(attend)=c("number","dep","ID","name","1","2","3","4","5","6","7","8","9","10","11","12")#
+attend1=data.frame(attend[,5:16])#
+#
+#convert X to 0#
+for(i in 1:43){#
+	for(ii in 1:12){#
+		if(attend1[i,ii]=="X")#
+			attend1[i,ii]=0#
+	}#
+}#
+#
+#Count numbers of 0 in each student#
+zero=c()#
+for(i in 1:43){#
+	count=0#
+	for(ii in 1:12){#
+		if(attend1[i,ii]==0)#
+			count=count+1#
+	}#
+	zero[i]=count#
+}#
+names(zero)=attend[,4]#
+zero=as.data.frame(zero)#
+#
+#convert the scores#
+for(i in 1:43){#
+	for(ii in 1:12){#
+		if(attend1[i,ii]=="A"){#
+			attend1[i,ii]=1#
+			next}#
+		if(attend1[i,ii]=="B"){#
+			attend1[i,ii]=.8#
+			next}#
+		if(attend1[i,ii]=="C"){#
+			attend1[i,ii]=.6#
+			next}#
+		if(attend1[i,ii]=="D"){#
+			attend1[i,ii]=.4}#
+	}#
+}#
+attend1[]=lapply(attend1, as.numeric)#
+#
+#sort the scores#
+attend1=apply(attend1,1,sort,decreasing=F) # 1 means row, 2 means column#
+#eliminate 2 scores from the data and calculate the scores#
+attend1=attend1[3:12,]#
+average_attend=apply(attend1,2,sum)#
+names(average_attend)=attend[,4]#
+average_attend=as.data.frame(average_attend)#
+#Second#
+#load homework#
+hw=read_excel("Econ101.xls",2)#
+hw1=data.frame(hw[,4:15])#
+#
+#covert the scores#
+for(i in 1:43){#
+	for(ii in 1:12){#
+		if(hw1[i,ii]=="A+"){#
+			hw1[i,ii]=2.5#
+			next}#
+		if(hw1[i,ii]=="A"){#
+			hw1[i,ii]=2.3#
+			next}#
+		if(hw1[i,ii]=="A-"){#
+			hw1[i,ii]=2.1#
+			next}#
+		if(hw1[i,ii]=="B+"){#
+			hw1[i,ii]=1.9#
+			next}#
+		if(hw1[i,ii]=="B"){#
+			hw1[i,ii]=1.7#
+			next}#
+		if(hw1[i,ii]=="B-"){#
+			hw1[i,ii]=1.5#
+			next}#
+		if(hw1[i,ii]=="NA")#
+			hw1[i,ii]=0#
+	}#
+}#
+hw1[]=lapply(hw1, as.numeric) # Sosososososo important!!!!!!!!! Converting the string to numeric#
+#
+#sort the scores#
+hw1=apply(hw1,1,sort,decreasing=F) # 1 means row, 2 means column#
+#eliminate 2 scores from the data and calculate the scores#
+hw1=hw1[3:12,]#
+average_hw=apply(hw1,2,sum)#
+names(average_hw)=hw[,3]#
+average_hw=as.data.frame(average_hw)#
+#
+#Third#
+#load exams#
+exam=read_excel("Econ101.xls",3)#
+exam1=exam[,4:6]#
+#
+#calculate the scores#
+average_exam=exam1[,1]*.15+exam1[,2]*.15+exam1[,3]*.3#
+names(average_exam)=exam[,3]#
+average_exam=as.data.frame(average_exam)#
+#
+#Forth#
+#load tests#
+test=read_excel("Econ101.xls",4)#
+test1=test[,4:5]#
+#
+#sort the scores#
+test1=apply(test1,1,sort,decreasing=F) # 1 means row, 2 means column#
+#eliminate 1 scores from the data and calculate the scores#
+average_test=test1[2,]*.05#
+names(average_test)=test[,3]#
+average_test=as.data.frame(average_test)#
+#The final result#
+final=average_attend+average_hw+average_test+average_exam#
+combine=data.frame(average_attend,average_hw,average_test,average_exam,final)#
+names(combine)=c("attend","hw","test","exam","result")
+combine
+list.files()
+write.xlsx(combine,"Final Scores1.xlsx")
+setwd("/Users/jonathan/Dropbox/R 期末報告/")
+setwd("/Users/jonathan/NCCU/郭老師/經濟學TA/1042/")
+exam=read_excel("Econ101.xls",3)#
+exam1=exam[,4:6]
+exam1
+attach(exam1)
+Midterm1=Midterm1*.15
+Midterm2=Midterm2*.15
+Midterm1
+one=Midterm1
+two=Midterm2
+two
+three=Final*.3
+three
+detail=data.frame(one,two,three)
+write.xlsx(detail,"detail.xlsx")
+setwd("/Users/jonathan/Dropbox/R 期末報告/")
+list.files()
+library(readxl)#
+data=read_excel("awesome2.xlsx")#
+attach(data)#
+CI=消費者信心#
+Unemploy=失業率#
+interest=利率#
+CPI=物價指數#
+ex=匯率
+detach(exam1)
+attach(data)
+str(data)
+#Two consecutive fall#
+transform_fall=function(index){#
+	bi=c()#
+	for(i in 1:(length(index)-2)){#
+		if((index[i+2]<index[i+1])&&(index[i+1]<index[i])){#
+			bi[i]=1}#
+		else{#
+			bi[i]=0}#
+	}#
+	return(bi)#
+}
+CPI連兩降=transform_fall(CPI)
+CPI連兩降
+CPI
+Unemploy連兩降=transform_fall(Unemploy)
+Unemploy連兩降
+Unemploy
+interest連兩降=transform_fall(interest)
+interest連兩降
+interest
+exp=data.frame(interest連兩降,CPI連兩降,Unemploy連兩降)
+write.xlsx(exp,"exp.xlsx")
+detach(data)
+detach(data1)
+rm(list=ls())
+ls()
+data=read_excel("awesome2.xlsx",2)#
+attach(data)#
+head(data)#
+exchange=匯率#
+y=JP_NKY_FutureExpect
+rdc.model=lm(y~0)
+fwd.model=step(rdc.model,direction = "both",scope=(~(log(GDP)+匯率+失業率+消費者信心+利率+物價指數+Unemploy_fall+CI_rise+interest_fall+CPI_rise+CPI_fall+CI_rise)^5))
+summary(fwd.model)
+AIC(fwd.model)
